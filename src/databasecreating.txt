@@ -1,0 +1,25 @@
+ use SupportTicketDB
+
+ db.createCollection(ticket);
+
+ var prod =[
+{prd_sr_num:"ewyet6ew6etw",pur_date:"30/11/2020",description:"React app works fine",status:"solved"}
+]
+
+ db.ticket.insert(prod)
+
+  db.ticket.find();
+
+
+
+  inserted values from browser
+[
+      
+> db.ticket.find();
+{ "_id" : ObjectId("5fc4aee14efdc7917ad39be1"), "prd_sr_num" : "ewyet6ew6etw", "pur_date" : "30/11/2020", "description" : "React app works fine", "status" : "solved" }
+{ "_id" : ObjectId("5fc4c944c19e0f3dd8296980"), "prd_sr_num" : "qwerty123", "pur_date" : "12/12/2020", "description" : null, "status" : "unsolved" }
+{ "_id" : ObjectId("5fc4c97ac19e0f3dd8296981"), "prd_sr_num" : "iphone11_qwes", "pur_date" : "2020-11-24", "description" : "cant play music in apps", "status" : "Unsolved" }
+{ "_id" : ObjectId("5fc4ca5cc19e0f3dd8296982"), "prd_sr_num" : "samsung-watch12", "pur_date" : "2020-11-18", "description" : "time zones is missing", "status" : "Unsolved" }
+  
+
+  ]
